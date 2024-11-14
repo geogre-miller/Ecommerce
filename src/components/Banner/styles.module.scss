@@ -1,0 +1,30 @@
+@import "@styles/mixins.module.scss";
+@import "@styles/variables.module.scss";
+
+
+.container {
+  @include flex_box_custom(center, center, 0px);
+
+  background-image: url("../../assets/icons/images/02-SLIDESHOW-1.jpeg");
+  min-width: none;
+  height: 750px;
+  background-color: #e9e6e3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.content {
+  @include flex_box_custom(center, center, 0px);
+  flex-direction: column;
+}
+.title{
+    font-size: 42px;
+    color: $fourth_color;
+    font-weight: 400;
+}
+.des{
+    color: $tertiary_color;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
