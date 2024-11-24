@@ -1,12 +1,9 @@
-
 import HomePage from "@components/HomePage/homepage";
-import Info from "@components/Info/infor";
 
-function App() {  
+function App() {
   return (
     <>
-        <HomePage />
-        <Info />
+      <HomePage />
     </>
   );
 }

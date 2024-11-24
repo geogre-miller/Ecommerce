@@ -6,13 +6,20 @@ import styles from "./styles.module.scss";
 function Info() {
   const { container } = styles;
   return (
-      <MainLayout>
-        <div className={container}>
-          {dataInfo.map((item) => {
-            return <InfoCard content={item.title} description={item.description} src={item.src} />;
-          })}
-        </div>
-      </MainLayout>
+    <MainLayout>
+      <div className={container}>
+        {dataInfo.map((item) => {
+          return (
+            <InfoCard
+              content={item.title}
+              description={item.description}
+              src={item.src}
+              key={item.id}
+            />
+          );
+        })}
+      </div>
+    </MainLayout>
   );
 }
 
